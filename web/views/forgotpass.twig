@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="ui container" style="width: 40%;">
+		<form class="ui form segment large" style="box-shadow: #353535 10px 10px 15px;padding: 30px;margin-top: 25%">
+			<div class="field">
+		     		<label>
+							Password recovery
+		     		</label>
+		      		<input placeholder="e-mail confirmation" name="name" type="email" required>
+				</div>
+			<div class="ui container two column centered grid">
+			    <div class="row">
+			   </div>
+			</div>
+			
+			<div style="width: 70%;margin-left: 70px; ;" class="ui green submit button">Send Confirmation</div>
+			<br>
+		</form>
+		
+		<br>
+		<br>
+		<div class="ui grid">
+			<div class="four wide column" id="contenedor">
+				<a id="item-login" href="terms">Terms</a>
+			</div>
+			<div class="two wide column">
+				
+			</div>
+			<div class="four wide column" id="contenedor">
+				<a id="item-login" href="privacy">Privacy</a>
+			</div>
+			<div class="two wide column">
+				
+			</div>
+			<div class="four wide column" id="contenedor">
+				<a id="item-login" href="security">Security</a>
+			</div>
+		</div>
+	</div>
+	
+{% endblock %}

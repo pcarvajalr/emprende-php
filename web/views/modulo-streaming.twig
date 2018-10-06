@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--______START FILTROS DE BUSQUEDAS______-->
+
+	<div class="menu-principal">
+		<div class="filtro-contacto">
+			<div>
+				<h3>Pais</h3>
+				<input type="text" placeholder="Buscar...">
+				<div class="selec-pais">
+					<input type="checkbox" class="checkbox">
+					<label for="Colombia" class="css-label">Colombia</label>
+				</div>
+				<div class="selec-pais">
+					<input type="checkbox" class="checkbox">
+					<label for="Mexico" class="css-label">Mexico</label>
+				</div>
+				<div class="selec-pais">
+					<input type="checkbox" class="checkbox">
+					<label for="EE.UU." class="css-label">EE.UU.</label>
+				</div>
+			</div>
+			<div>
+				<h3>Idioma</h3>
+				<input type="text" placeholder="Buscar...">
+				<div>
+					<input type="checkbox" class="checkbox">
+					<label class="css-label" for="spanish">Spanish</label>
+				</div>
+				<div>
+					<input type="checkbox" class="checkbox">
+					<label class="css-label" for="english">English</label>
+				</div>
+				<div>
+					<input type="checkbox" class="checkbox">
+					<label class="css-label" for="frances">Frances</label>
+				</div>
+			</div>
+		</div>
+			
+		<div>
+			<h3>Categorias de Negocios</h3>
+			<input type="text" placeholder="Buscar...">
+			<div>
+				<input type="checkbox" class="checkbox">
+				<label class="css-label" for="Comida">Comida</label>
+			</div>
+			<div>
+				<input type="checkbox" class="checkbox">
+				<label class="css-label" for="Tecnologia">Tecnologia</label>
+			</div>
+			<div>
+				<input type="checkbox" class="checkbox">
+				<label class="css-label" for="Ropa">Ropa</label>
+			</div>
+		</div>
+	</div>
+
+<!--________END FILTROS DE BUSQUEDAS_______-->	
+
+
+<!-- ______________ START PERFILES USUARIOS _________-->
+
+	<div class="perfiles">
+		<div class="contenedor-perfiles">
+			<div>
+				<h3 class="titulo-emprendedores">Emprededores Encontrados</h3>
+			</div>
+			<br><br>
+			<div>
+				<div class="perfil">
+					<div class="foto">Foto</div>
+					<div class="basicos">
+						<span>Nombre:</span>
+						<span>Pais:</span>
+						<span>Idioma:</span>
+					</div>
+					<div class="detalles">Información</div>
+				</div>
+				<div class="perfil">
+					<div class="foto">Foto</div>
+					<div class="basicos">
+						<span>Nombre:</span>
+						<span>Pais:</span>
+						<span>Idioma:</span>
+					</div>
+					<div class="detalles">Información</div>
+				</div>
+				<div class="perfil">
+					<div class="foto">Foto</div>
+					<div class="basicos">
+						<span>Nombre:</span>
+						<span>Pais:</span>
+						<span>Idioma:</span>
+					</div>
+					<div class="detalles">Información</div>
+				</div>
+				<div class="perfil">
+					<div class="foto">Foto</div>
+					<div class="basicos">
+						<span>Nombre:</span>
+						<span>Pais:</span>
+						<span>Idioma:</span>
+					</div>
+					<div class="detalles">Información</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- _______________ END PERFILES USUARIOS _________ -->
+	
+
+<!-- _______________ Start Streaming _________ -->
+
+	<div class="modulo-streaming">
+		<div>
+			<canvas class="modulo-video">Chat</canvas>
+		</div>
+		<div>
+			<canvas class="modulo-chat">Video</canvas>
+		</div>
+	</div>
+
+<!-- _______________ END Streaming _________ -->
+
+
+<!-- _______________ START OPCIONES DE CHAT _________ -->
+
+
+	<div class="ui one column grid" id="temas">
+		<div class="column">
+			<div class="ui segment large">
+				<h3>Temas de tu interes</h3>
+				<h5>Existe este tipo de negocio?</h5>
+				<h5>Que documentacion se necesita?</h5>
+				<h5>Impuestos.</h5>
+				<h5>Proveedores</h5>
+				<h5></h5>
+			</div>
+			<div class="ui segment">
+				<h3>Fraces Comunes</h3>
+			</div>
+			<div class="ui segment">
+				<h3>Los mas usados</h3>
+			</div>
+		</div>
+	</div>
+{% endblock %}

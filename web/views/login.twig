@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="ui container" style="width: 40%;">
+		<form class="ui form segment large" style="box-shadow: #353535 10px 10px 15px;padding: 30px;margin-top: 15%">
+			<div class="field">
+		     		<label>Username or email address</label>
+		      		<input placeholder="Username" name="name" type="text">
+			</div>
+			<div class="field">
+			   	<div class="ui grid">
+				    <div class="eight wide column">
+				   	 	<label>Password</label>
+				    </div>
+			     	<div class="eight wide column">
+			     		<label for="forgot_pass"><a href="forgotpass.php"><h5 align="right">Forgot password?</h5></a></label>
+			     	</div>
+				</div>
+			    <input name="password" type="password">
+			</div>
+			<div class="inline field">
+			    <div class="ui checkbox">
+			      <input name="terms" type="checkbox">
+			      <label>I agree to the terms and conditions</label>
+			    </div>
+			</div>
+			<div style="width: 70%;margin-left: 70px; ;" class="ui green submit button">Sign In</div>
+			<br>
+		</form>
+			<div class="ui grid segment inverted teal" style="box-shadow: #353535 10px 10px 15px;">
+				<div class="eight wide column">
+					<h3>New to Learn Teaching?</h3>
+				</div>
+				<div class="eight wide column">
+					<a href="register.php"><h3 align="right" style="color: #E19A12;">Create an Account.</h3></a>
+				</div>		
+			</div>
+		<br>
+		<br>
+		<div class="ui grid">
+			<div class="four wide column" id="contenedor">
+				<a id="item-login" href="terms">Terms</a>
+			</div>
+			<div class="two wide column">
+				
+			</div>
+			<div class="four wide column" id="contenedor">
+				<a id="item-login" href="privacy">Privacy</a>
+			</div>
+			<div class="two wide column">
+				
+			</div>
+			<div class="four wide column" id="contenedor">
+				<a id="item-login" href="security">Security</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
